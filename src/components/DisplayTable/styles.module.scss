@@ -1,0 +1,31 @@
+.displaytable {
+    table {
+        border-spacing: 0;
+        min-width: 800px;
+        margin: 0 auto;
+
+        thead {
+            th {
+                border: 1px solid #000;
+                border-right: none;
+
+                &:last-of-type {
+                    border-right: 1px solid #000;
+                }
+            }
+        }
+
+        tbody {
+            td {
+                border: 1px solid #000;
+                border-right: none;
+                border-top: none;
+                padding: 7px;
+
+                &:last-of-type {
+                    border-right: 1px solid #000;
+                }
+            }
+        }
+    }
+}
