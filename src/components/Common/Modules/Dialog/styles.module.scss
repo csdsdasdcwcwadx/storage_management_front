@@ -1,0 +1,80 @@
+body.lockpage {
+    overflow: hidden;
+}
+
+.blocker {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: #fff;
+        cursor: pointer;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &.overflow {
+        bottom: 0;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    &.LEFT {
+        top: 0;
+        left: -100%;
+
+        &.show {
+            left: 0;
+        }
+    }
+
+    &.RIGHT {
+        top: 0;
+        right: -100%;
+
+        &.show {
+            right: 0;
+        }
+    }
+
+    &.TOP {
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.show {
+            top: 50%;
+        }
+    }
+
+    &.BOTTOM {
+        bottom: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &.show {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(34, 34, 34, 0.5);
+    z-index: 3;
+}

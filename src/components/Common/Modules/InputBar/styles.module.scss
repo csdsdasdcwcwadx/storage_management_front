@@ -1,0 +1,29 @@
+.inputblock {
+    margin-bottom: 20px;
+
+    span {
+        display: block;
+        color: #222;
+        margin: 0 0 5px 5px;
+        font-size: 12px;
+    }
+
+    input {
+        width: calc(99% - 20px);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+
+        &::placeholder {
+            color: #ddd;
+        }
+    }
+
+    .err {
+        color: red;
+        margin-bottom: 0;
+    }
+
+}
