@@ -2,6 +2,7 @@
   "name": "storage_management_front",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@tanstack/react-query": "^5.84.1",
     "@testing-library/dom": "^10.4.1",
