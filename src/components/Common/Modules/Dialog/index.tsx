@@ -23,7 +23,6 @@ function LightBox ({isOpen, handleDispatch, children, direction, theName, isOver
 
     useEffect (()=>{
         const { body } = document;
-        console.log(theName)
         const parent = document.querySelector(`.blocker .${theName}`) as HTMLElement;
         const blocker = parent.parentNode as HTMLElement;
         if(isOpen) {
